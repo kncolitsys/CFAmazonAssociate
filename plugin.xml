@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.idxtools.mango.plugins.idxAmazon" name="IDX Tools for Amazon Associates" version="1.2" 
+provider-name="IDXTools"
+class="idxAmazon.Handler">
+<description>
+<![CDATA[ Adds Amazon Associate links to posts, use Custom Field id for Product links.
+<ul><li>Learn more about <a href="https://affiliate-program.amazon.com/">Amazon Associates program</a></li>
+<li><a href="http://idxtools.com/post.cfm/idxamazon-plugin">Documentation</a> is publish on idxtools.com</li>
+<li>Please post questions or suggestion <a href="http://idxtools.com/post.cfm/idxamazon-plugin">blog post</a>
+</ul> ]]></description>
+
+<requiresVersion match="greaterOrEqual">1.6</requiresVersion>
+  <listens>
+  	<event name="beforePostContentEnd" type="synch" priority="5" />
+  	<event name="beforePageContentEnd" type="synch" priority="5" />
+   	<event name="settingsNav" type="synch" priority="5" />
+  	<event name="showIDXAmazonSettings" type="synch" priority="5" />
+  	<event name="dashboardPod" type="synch" priority="5" />
+  	<event name="beforeAdminPostFormDisplay" type="synch" priority="5" />
+  	<event name="beforeAdminPageFormDisplay" type="synch" priority="5" />
+  	<event name="postGetContent" type="synch" priority="5" />
+  	<event name="pageGetContent" type="synch" priority="5" />
+  </listens>
+  
+  <assets>
+  	<asset file="assets/amazonassociates-logo.jpg" />
+  </assets>
+</plugin>
